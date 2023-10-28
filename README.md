@@ -1,4 +1,4 @@
 # vandyhacks23
 Project for VandyHacks 2023
 
-Created by Jason Lee, Richard Li
+Created by Jason Lee, Vince Lin, Richard Li
