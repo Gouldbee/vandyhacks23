@@ -1,27 +1,131 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.outercontainer {
+  background-color: white;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: row;
+  overflow: hidden !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 255, 255, 255;
-    --background-end-rgb: 0, 0, 0;
-  }
+.topbar {
+  background-color: black;
+  display: flex;
+  height: (100/8)vh;
+  width: 100vw;
+  flex-direction: column;
+  overflow: hidden !important;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 50%;
+}
+
+.rightside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 50%;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: Solid(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0 !important;
+}
+
+.woman {
+  height: 100%;
+}
+
+
+.text-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.signin-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.email-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pass-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  font-family: "League Spartan-Regular", Helvetica;
+
+}
+
+.name-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  font-family: "League Spartan-Regular", Helvetica;
+}
+
+.text {
+  margin-left: 7.5rem;
+
+}
+
+.gender {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#genderButtonM {
+  margin-left: 7.5rem;
+  background: white;
+  color: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 30px;
+  border: black;
+  border-style: solid;
+  border-width: medium;
+}
+
+#genderButtonF {
+  margin-left: 2.5rem;
+  background: white;
+  color: black;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 30px;
+  border: black;
+  border-style: solid;
+  border-width: medium;
+}
+
+#signUpButton {
+  background: none;
+  border: none;
+}
+
+#signInButton {
+  background: black;
+  color: white;
+  width: 550px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 16px;
 }
