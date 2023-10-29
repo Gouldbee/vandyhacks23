@@ -191,40 +191,6 @@ app.patch("/addCondition", (request, response) => {
     updateDB("MedicalCondition", cond);  
     response.json({ worked: true }); 
 })
-
-
-writeDB("Jim", "male", "acetaminophen", "Prozac", "liver disease"); 
-fetch("http://localhost:8000/addAllergy", {
-    method: 'PATCH', 
-    headers: {
-        "Content-Type": "application/json",
-    },
-    body: JSON.stringify({allergy:'peanuts'}) 
-}) 
-    .then((res) => res.json())
-    .then((data) => {
-        console.log(data.worked); 
-    })
-fetch("http://localhost:8000/addCondition", {
-    method: 'PATCH', 
-    headers: {
-        "Content-Type": "application/json",
-    },
-    body: JSON.stringify({cond: 'heart problems'})
-})
-fetch("http://localhost:8000/addMed", {
-    method: 'POST',
-    headers: {
-        "Content-Type": "application/json",
-    },
-    body: JSON.stringify({med: 'acetaminophen'}) 
-}) 
-    .then ((res) => res.json())
-    .then ((data) => {
-        console.log("raw data: ", data); 
-        console.log("data received: ", data.added, data.allergic, data.medications, data.medEffects, data.conditions, data.condEffects); 
-    })
-    .catch(err => console.error(err)); 
  
 app.listen(process.env.PORT, () => {
     console.log(`Server running on port ${process.env.PORT}`); 
