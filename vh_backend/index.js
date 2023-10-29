@@ -182,14 +182,14 @@ app.patch("/addAllergy", (request, response) => {
     const allergy = request.body.allergy; 
 
     updateDB("Allergies", allergy); 
-    response.send({ worked: true }); 
+    response.json({ worked: true }); 
 })
 
 app.patch("/addCondition", (request, response) => {
     const cond = request.body.cond; 
 
     updateDB("MedicalCondition", cond);  
-    response.send({ worked: true }); 
+    response.json({ worked: true }); 
 })
 
 
@@ -200,7 +200,11 @@ fetch("http://localhost:8000/addAllergy", {
         "Content-Type": "application/json",
     },
     body: JSON.stringify({allergy:'peanuts'}) 
-})
+}) 
+    .then((res) => res.json())
+    .then((data) => {
+        console.log(data.worked); 
+    })
 fetch("http://localhost:8000/addCondition", {
     method: 'PATCH', 
     headers: {
@@ -214,7 +218,8 @@ fetch("http://localhost:8000/addMed", {
         "Content-Type": "application/json",
     },
     body: JSON.stringify({med: 'acetaminophen'}) 
-}) .then ((res) => {res.json();})
+}) 
+    .then ((res) => res.json())
     .then ((data) => {
         console.log("raw data: ", data); 
         console.log("data received: ", data.added, data.allergic, data.medications, data.medEffects, data.conditions, data.condEffects); 
