@@ -85,11 +85,11 @@ export default function mainLand() {
                 <button type="submit">Submit</button>
             </form>
 
-            <text>{allergyInfo}</text>
-            <text>{condInfo}</text>
-            <text>
+            <div>{allergyInfo}</div>
+            <div>{condInfo}</div>
+            <div>
                 {medInfo}
-            </text>
+            </div>
         </main>
     )
 }
