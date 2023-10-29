@@ -1,7 +1,7 @@
 {
-  "/page": "app/page.js",
-  "/SignIn/page": "app/SignIn/page.js",
-  "/SignUp/page": "app/SignUp/page.js",
-  "/ProfileCreate/page": "app/ProfileCreate/page.js",
-  "/Profile/page": "app/Profile/page.js"
+  "/Profile/page": "app/Profile/page.js",
+  "/Allergies/page": "app/Allergies/page.js",
+  "/MedCondi/page": "app/MedCondi/page.js",
+  "/CurrentMed/page": "app/CurrentMed/page.js",
+  "/NewMed/page": "app/NewMed/page.js"
 }

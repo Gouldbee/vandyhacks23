@@ -81,11 +81,99 @@
 
 .topbar {
   background-color: black;
-  display: flex;
-  height: (100/8)vh;
+  height: 150px;
   width: 100vw;
-  flex-direction: column;
+}
+
+.topbaritems {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden !important;
+  padding: 20px 30px 10px 30px;
+}
+
+.title {
+  padding: 0px 0px 0px 0px;
+  font-size: 50px;
+}
+
+.newmed {
+  display: flex;
+  padding: 40px 0px 0px 70px;
+}
+
+.newmedbutton {
+  background: rgb(255, 162, 86);
+  color: white;
+  width: 250px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.checkbutton {
+  background: rgb(59, 186, 121);
+  color: white;
+  width: 250px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.bottomspace {
+  padding: 70px;
+}
+
+.bottomspacetop {
+  display: flex;
+  padding: 0px 0px 70px 0px;
+}
+
+.username {
+  padding: 0px 0px 0px 70px;
+  font-size: 70px;
+}
+
+.gender {
+  padding: 0px 0px 0px 70px;
+  font-size: 30px;
+}
+
+.medicalbuttons {
+  padding: 0px 100px 0px 0px;
+  background-color: white;
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  overflow: hidden !important;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  background: rgb(122, 195, 255);
+  color: white;
+  width: 250px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-right: 7.5rem;
+  ;
+}
+
+.LogoW {
+  align-self: self-start;
+  padding-top: 100;
+  padding-left: 100;
+}
+
+.welcome {
+  align-self: self-end;
+  margin-top: 100;
+  margin-right: 100;
+  color: white;
 }
 
 .leftSide {
@@ -161,6 +249,7 @@ body {
   display: flex;
   justify-content: flex-start;
 }
+
 
 #genderButtonM {
   margin-left: 7.5rem;
